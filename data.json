@@ -1,0 +1,210 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "role": "FDA",
+      "name": "FDA Inspector",
+      "email": "fda@gov.com"
+    },
+    {
+      "id": 2,
+      "role": "Manufacturer",
+      "name": "PharmaCorp Inc",
+      "email": "mfg@pharmacorp.com"
+    },
+    {
+      "id": 3,
+      "role": "Distributor",
+      "name": "MedLog Distributors",
+      "email": "dist@medlog.com"
+    },
+    {
+      "id": 4,
+      "role": "Pharmacy",
+      "name": "HealthPlus Pharmacy",
+      "email": "pharmacy@healthplus.com"
+    },
+    {
+      "id": 5,
+      "role": "Patient",
+      "name": "John Doe",
+      "email": "patient@email.com"
+    }
+  ],
+  "batches": [
+    {
+      "batchId": "BTCH-2024-001",
+      "drugName": "Amoxicillin 500mg",
+      "manufacturer": "PharmaCorp Inc",
+      "manufactureDate": "2024-10-15",
+      "expiryDate": "2026-10-15",
+      "quantity": 10000,
+      "currentLocation": "HealthPlus Pharmacy",
+      "status": "Delivered",
+      "currentTemp": 22.5,
+      "currentHumidity": 45,
+      "gpsLat": 28.6139,
+      "gpsLon": 77.209
+    },
+    {
+      "batchId": "BTCH-2024-002",
+      "drugName": "Lisinopril 10mg",
+      "manufacturer": "PharmaCorp Inc",
+      "manufactureDate": "2024-10-20",
+      "expiryDate": "2026-10-20",
+      "quantity": 5000,
+      "currentLocation": "MedLog Distributors",
+      "status": "In Transit",
+      "currentTemp": 21.45000532738763,
+      "currentHumidity": 53.13233765448347,
+      "gpsLat": 19.077199628167968,
+      "gpsLon": 72.8767027860591
+    },
+    {
+      "batchId": "BTCH-2024-003",
+      "drugName": "Metformin 850mg",
+      "manufacturer": "PharmaCorp Inc",
+      "manufactureDate": "2024-11-01",
+      "expiryDate": "2026-11-01",
+      "quantity": 8000,
+      "currentLocation": "PharmaCorp Inc",
+      "status": "Manufacturing",
+      "currentTemp": 23.175195700296083,
+      "currentHumidity": 55.390661014175635,
+      "gpsLat": 12.975774671958437,
+      "gpsLon": 77.59643292091451
+    },
+    {
+      "batchId": "BTCH-2024-004",
+      "drugName": "Feveril 500mg",
+      "manufacturer": "PharmaCorp Inc",
+      "manufactureDate": "2024-11-05",
+      "expiryDate": "2026-11-05",
+      "quantity": 6000,
+      "currentLocation": "HealthPlus Pharmacy",
+      "status": "Delivered",
+      "currentTemp": 21.5,
+      "currentHumidity": 43,
+      "gpsLat": 28.7041,
+      "gpsLon": 77.1025
+    },
+    {
+      "batchId": "BTCH-2024-005",
+      "drugName": "Aspirin 500mg",
+      "manufacturer": "PharmaCorp Inc",
+      "manufactureDate": "2024-11-10",
+      "expiryDate": "2026-11-10",
+      "quantity": 12000,
+      "currentLocation": "MedLog Distributors",
+      "status": "In Transit",
+      "currentTemp": 23.8,
+      "currentHumidity": 48,
+      "gpsLat": 19.0176,
+      "gpsLon": 72.8562
+    },
+    {
+      "batchId": "BTCH-2024-006",
+      "drugName": "Naproxen 220mg",
+      "manufacturer": "PharmaCorp Inc",
+      "manufactureDate": "2024-11-12",
+      "expiryDate": "2026-11-12",
+      "quantity": 7000,
+      "currentLocation": "PharmaCorp Inc",
+      "status": "Manufacturing",
+      "currentTemp": 25.057344268061236,
+      "currentHumidity": 52.11758787443042,
+      "gpsLat": 13.084407998399596,
+      "gpsLon": 80.27259175069709
+    }
+  ],
+  "blockchainTransactions": [
+    {
+      "txId": "TX-0x1a2b3c",
+      "batchId": "BTCH-2024-001",
+      "from": "Ingredient Supplier",
+      "to": "PharmaCorp Inc",
+      "timestamp": "2024-10-15T08:30:00",
+      "location": "Bangalore, India",
+      "blockHash": "0x7f8e9d...",
+      "verified": true
+    },
+    {
+      "txId": "TX-0x2b3c4d",
+      "batchId": "BTCH-2024-001",
+      "from": "PharmaCorp Inc",
+      "to": "MedLog Distributors",
+      "timestamp": "2024-10-18T14:20:00",
+      "location": "Bangalore, India",
+      "blockHash": "0x8g9f0e...",
+      "verified": true
+    }
+  ],
+  "iotReadings": [
+    {
+      "id": 1762369625130,
+      "timestamp": "2025-11-05T19:07:05.130Z",
+      "batchId": "BTCH-2024-003",
+      "temperature": 23.175195700296083,
+      "humidity": 55.390661014175635,
+      "gpsLat": 12.975774671958437,
+      "gpsLon": 77.59643292091451
+    },
+    {
+      "id": 1762369625133,
+      "timestamp": "2025-11-05T19:07:05.133Z",
+      "batchId": "BTCH-2024-002",
+      "temperature": 21.45000532738763,
+      "humidity": 53.13233765448347,
+      "gpsLat": 19.077199628167968,
+      "gpsLon": 72.8767027860591
+    },
+    {
+      "id": 1762369625135,
+      "timestamp": "2025-11-05T19:07:05.135Z",
+      "batchId": "BTCH-2024-006",
+      "temperature": 25.057344268061236,
+      "humidity": 52.11758787443042,
+      "gpsLat": 13.084407998399596,
+      "gpsLon": 80.27259175069709
+    }
+  ],
+  "alerts": [
+    {
+      "id": 1,
+      "batchId": "BTCH-2024-002",
+      "type": "Temperature Deviation",
+      "severity": "high",
+      "message": "Temperature exceeded safe range: 25.8°C (Max: 25°C)",
+      "timestamp": "2024-11-05T14:23:00",
+      "resolved": false
+    },
+    {
+      "id": 2,
+      "batchId": "BTCH-2024-001",
+      "type": "Normal",
+      "severity": "low",
+      "message": "Delivery completed successfully",
+      "timestamp": "2024-10-22T16:45:00",
+      "resolved": true
+    },
+    {
+      "id": 1762369625136,
+      "batchId": "BTCH-2024-006",
+      "type": "Temperature Deviation",
+      "severity": "high",
+      "message": "Temperature out of range: 25.057344268061236°C",
+      "timestamp": "2025-11-05T19:07:05.135Z",
+      "resolved": false
+    }
+  ],
+  "sentMessages": [
+    {
+      "id": 1762369625137,
+      "to": "6300839249",
+      "text": "ALERT for batch BTCH-2024-006: Temperature out of range: 25.057344268061236°C",
+      "timestamp": "2025-11-05T19:07:05.135Z",
+      "batchId": "BTCH-2024-006",
+      "alertId": 1762369625136
+    }
+  ]
+}
